@@ -14,6 +14,6 @@ Part of my 60-Day Challenge to break tutorial hell by building 6+ real-world fro
 Built from scratch using:
 - React
 - Tailwind CSS
-- Vitex
+- Vite
 
 Follow my journey on LinkedIn:https://www.linkedin.com/in/amir-reza-ghasemi-nik-42a1b822a/
