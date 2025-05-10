@@ -16,4 +16,4 @@ Built from scratch using:
 - Tailwind CSS
 - Vitex
 
-Follow my journey on LinkedIn: [your-link]
+Follow my journey on LinkedIn:https://www.linkedin.com/in/amir-reza-ghasemi-nik-42a1b822a/
