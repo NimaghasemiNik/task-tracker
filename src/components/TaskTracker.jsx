@@ -3,7 +3,13 @@ import React, { useState } from 'react';
 const TaskTracker = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
-
+  const handleAddTask = () => {
+    if (!newTask.trim()) return; // Ignore empty input
+  
+    setTasks([...tasks, newTask]);
+    setNewTask('');
+  };
+  
   return (
     <div className="max-w-md mx-auto mt-10 bg-white shadow-md rounded-lg p-6">
       <h2 className="text-2xl font-bold mb-4 text-center text-blue-600">Task Tracker</h2>
@@ -16,7 +22,9 @@ const TaskTracker = () => {
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
         />
-        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        <button
+          onClick={handleAddTask}
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
           Add
         </button>
       </div>
